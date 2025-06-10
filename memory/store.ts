@@ -1,6 +1,6 @@
-import { User } from "../types/User";
+import { Ticker } from "../types/Ticker";
 
 export const store = {
-	users: [] as User[],
-	nextId: 1,
+	data: [] as Ticker[],
+	activity: new Map(),
 };
