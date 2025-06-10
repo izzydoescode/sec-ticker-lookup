@@ -8,3 +8,5 @@
 - [Express.js](https://expressjs.com)
 - [TypeScript](https://www.typescriptlang.org)
 - [Nodemon](https://nodemon.io)
+
+## Author: [Israel D. Matos](https://github.com/izzydoesit)
