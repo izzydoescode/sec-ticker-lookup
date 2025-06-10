@@ -7,6 +7,8 @@ router.get("/:tickerId", (req: Request, res: Response) => {
 	try {
 		const { tickerId } = req.params;
 		if (!tickerId) return res.status(400).json({ error: "Ticker missing" });
+		console.log("Requested ticker: ", tickerId);
+		console.log("Data loaded: ", store.data.length, "tickers");
 
 		// record activity
 		const count = store.activity.get(tickerId) ?? 0;
@@ -16,6 +18,8 @@ router.get("/:tickerId", (req: Request, res: Response) => {
 		const company = store.data.find(
 			(co) => co.ticker.toUpperCase() === tickerId.toUpperCase()
 		);
+
+		console.log("Match found: ", company);
 
 		// if not found, return 404
 		if (!company) {
