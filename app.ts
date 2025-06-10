@@ -8,11 +8,15 @@ app.use(express.json());
 app.use("/tickers", tickersRouter);
 app.use("/activity", activityRouter);
 (async () => {
-	await loadSECdata();
-	const PORT = process.env.PORT || 3000;
-	app.listen(PORT, () => {
-		console.log(`Server running on port ${PORT}`);
-	});
+	try {
+		await loadSECdata();
+		const PORT = process.env.PORT || 3000;
+		app.listen(PORT, () => {
+			console.log(`Server running on port ${PORT}`);
+		});
+	} catch (e) {
+		console.error("Failed to load SEC data: ", e);
+	}
 })();
 
 app.post("/", (req: Request, res: Response) => {
