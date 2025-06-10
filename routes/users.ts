@@ -1,5 +1,6 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import { store } from "../memory/store";
+import { User, UserCreateRequest } from "../types/User";
 
 const router = express.Router();
 
