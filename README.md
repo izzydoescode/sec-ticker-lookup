@@ -1,8 +1,8 @@
-# 🌎 Node API Scaffold
+# 🌎 Node API Scaffold 🌏
 
 ## This is a [Node.js](https://nodejs.org) API scaffold that provides a basic structure for building RESTful APIs
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - [Node.js](https://nodejs.org)
 - [Express.js](https://expressjs.com)
