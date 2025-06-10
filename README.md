@@ -8,5 +8,7 @@
 - [Express.js](https://expressjs.com)
 - [TypeScript](https://www.typescriptlang.org)
 - [Nodemon](https://nodemon.io)
+- [Jest](https://jestjs.io)
+- [Supertest](https://github.com/ladjs/supertest)
 
 ## Author: [Israel D. Matos](https://github.com/izzydoesit)
