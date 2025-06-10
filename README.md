@@ -90,6 +90,14 @@ To make the project more accessible to non-developers and recruiters, I’ll be 
 - Shows company info in real time
 - Displays a leaderboard of the most viewed companies
 
+### 🔜 UI Features
+
+A React frontend with the following:
+
+- A search bar (`GET /tickers/:ticker`)
+- A table or chart showing activity from `/activity`
+- Deployable on Vercel/Netlify
+
 ## Author
 
 Made with ❤️ by [Israel D. Matos](https://github.com/izzydoesit) | Connect with me on [LinkedIn](https://www.linkedin.com/in/izzy-matos/)
